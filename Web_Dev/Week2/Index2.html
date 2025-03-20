@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML lists, Images, Tables & Forms</title>
+    </head>
+    <body>
+        <h2> Ordered lists</h2><!--displays items using numbers-->
+        <ol type="a" start="5">
+            <li>Kenya</li>
+            <li>South Africa</li>
+            <li>Nigeria</li>
+        </ol>
+        <h2> Un-ordered list</h2><!--Displays items using bullet points-->
+        <ul type="circle">
+            <li>Ghana</li>
+            <li>Spain</li>
+            <li>South Sudan</li>
+        </ul>
+        <h2>Definition Lists</h2><!--defines terms and their descriptions-->
+        <dl><!--You can't use the "type" attribute to fix it's appearance-->
+            <dt>HTML</dt>
+            <dd>Hyper text markup language</dd>
+        </dl>
+        <h2>Images</h2>
+        <h3> Internal Images</h3><!-- embedding images in HTML-->
+        <img src="Rupaul.gif" alt="image of Rupaul" height="200" width="200">
+        <h3>External Images</h3><!--Images in a different location-->
+        <img src="https://images.pexels.com/photos/9171553/pexels-photo-9171553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="100" height="400" width="400" >
+        <h2>HTML Tables</h2>
+        <Table border="5">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Age</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lerato Moloi</td>
+                    <td>21</td>
+                    <td>South Africa</td>
+                </tr>
+                <tr>
+                    <td>Thando Nkomo</td>
+                    <td>21</td>
+                    <td>South Africa</td>
+                </tr>
+                <tr>
+                    <td>Sinethemba Dladla</td>
+                    <td>21</td>
+                    <td>South Africa</td>
+                </tr>
+                <tr>
+                    <td>Collen Makuwa</td>
+                    <td>20</td>
+                    <td>South Africa</td>
+                </tr>
+            </tbody><!--actual content of the table-->
+            <tfoot></tfoot>
+        </Table>
+        <h2>HTML Forms</h2>
+        <!--Start of form-->
+        <form action="" method="">
+            <label for="full_name">Full Name</label>
+            <input type="text" id="full_name" name="" required placeholder="" >
+            <br><br>
+            <label for="Email">Email </label>
+            <input type="email" placeholder="example@gmail.com">
+            <br><br>
+            <label for="password">password:</label>
+            <input type="password" id="password" name="password">
+            <br><br>
+            <label for="Address">Address</label>
+            <input type="text" id="Address" name="address" placeholder="your address" required>
+            <br><br>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" value="male">male
+            <input type="radio" name="gender" value="female">female
+            <br><br>
+            <label for="hobby">Hobbies</label>
+            <input type="checkbox" name="hobby" value="travel">Travel
+            <input type="checkbox" name="hobby" value="travel">Music
+            <input type="checkbox" name="hobby" value="travel">Reading
+            <input type="checkbox" name="hobby" value="travel">Swimming
+            <br><br>
+            <label>Country</label>
+            <select name="Country" id="country">
+                <option>--Select Country--</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Botswana">Botswana</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Tanzania">Tanzania</option>
+            </select>
+            <button type="submit" >Submit</button>
+            <button type="reset" value="Cancel/Reset"></button>
+            
+        </form>
+
+    </body>
+    <footer>All gay rights reserved.</footer>
+</html>
